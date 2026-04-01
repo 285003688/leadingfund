@@ -1,22 +1,13 @@
 {
   "version": 2,
   "name": "approval-options-api",
-  "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/index.py"
-    }
-  ],
+  "builds": [{"src": "api/index.py", "use": "@vercel/python"}],
+  "routes": [{"src": "/(.*)", "dest": "api/index.py"}],
   "env": {
     "FEISHU_APP_ID": "cli_a702d854343f100b",
     "FEISHU_APP_SECRET": "qlQN64wYn6ocTBeDct7T4eFxp2uhOPGh",
     "BASE_TOKEN": "UcVIbWeh7afIZMsudxOc3vCgnoh",
-    "TABLE_ID": "tblN9MhKkKVSAELI"
+    "TABLE_ID": "tblN9MhKkKVSAELI",
+    "API_TOKEN": "approval-options-2024"
   }
 }
